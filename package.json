@@ -5,8 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "cron": "^1.8.2",
+    "express": "^4.17.1",
     "node-fetch": "^2.6.0",
-    "redis": "^3.0.2"
+    "redis": "^3.0.2",
+    "websocket": "^1.0.31"
   },
   "devDependencies": {},
   "scripts": {

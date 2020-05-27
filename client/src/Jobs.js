@@ -24,7 +24,7 @@ export default function Jobs({jobs}) {
       setOpen(false);
     };
 
-    // pagination
+    // paging
     const numJobs = jobs.length;
     const numPages = Math.ceil(numJobs / 50);
     const [activeStep, setActiveStep] = React.useState(0);

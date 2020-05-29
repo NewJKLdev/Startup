@@ -5,7 +5,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import App from './App';
+
 
 
 export default function JobAlerts({job, open, handleClose}) {
@@ -21,8 +21,8 @@ export default function JobAlerts({job, open, handleClose}) {
           onClose={handleClose}
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description">
-          <DialogTitle id="alert-dialog-title">{job.title} -
-          <img className={'info-logo'} src={job.company_logo}/>
+          <DialogTitle id="alert-dialog-title">{job.title} - 
+          <img className={'info-logo'} src={job.company_logo} alt="description"/>
           </DialogTitle>
           <DialogContent>
             <DialogContentText id="alert-dialog-description" dangerouslySetInnerHTML={{__html: job.description}}>
@@ -32,7 +32,7 @@ export default function JobAlerts({job, open, handleClose}) {
             <Button onClick={handleClose} color="primary">
               Close
             </Button>
-            <a href={job.url} target="_blank">
+            <a href={job.url} target="job.url">
               <Button color="primary">Apply</Button>
             </a>
           </DialogActions>

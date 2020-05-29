@@ -81,8 +81,6 @@ export default function Jobs({jobs}) {
                     </Button>
                 }
             />
-
-
         </div>
     )
 }

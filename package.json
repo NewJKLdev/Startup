@@ -1,18 +1,19 @@
 {
-  "name": "rest-api-docker",
+  "name": "Startup",
   "version": "1.0.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "script":{
-    "start": "node index.js"
-  },
   "dependencies": {
-    "@material-ui/icons": "^4.9.1",
     "cron": "^1.8.2",
+    "denque": "^1.4.1",
     "express": "^4.17.1",
+    "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31",
     "node-fetch": "^2.6.0",
     "redis": "^3.0.2",
-    "websocket": "^1.0.31"
+    "redis-commands": "^1.5.0",
+    "redis-errors": "^1.2.0",
+    "redis-parser": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -23,7 +24,7 @@
     "url": "git+https://github.com/NewJKLdev/Startup.git"
   },
   "keywords": [],
-  "author": "Terry Mac-Tay",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NewJKLdev/Startup/issues"

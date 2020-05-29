@@ -13,5 +13,8 @@ app.get('/jobs', async (req, res) => {
     res.header("Access-Control-Allow-Origin", "http://localhost:3000");
     return res.send(jobs)
 })
+app.set('port', process.env.PORT || 3000);
 
-app.listen(port, () => console.log(`App listening at http://localhost:${port}`))
+app.listen(port, function(){
+console.log(`App listening on ${port}!`);
+});
